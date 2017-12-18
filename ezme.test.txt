@@ -1,0 +1,63 @@
+'main'
+<<
+	pl = 'true' 
+	prog = 'false' 
+	bil = 'logicalassign' pl & prog 
+	arr << pl , prog , <<hi , bil >> 
+	new = 'logicalassign' arr << 3 >> ^ arr << 2 >> 
+	arr << 4 >> = 'true' 
+	<<hi = 'false'
+
+	predic ^^ aa , bb ^^
+	<< 
+		aa = 'true'
+		bb = ! aa <=> bb
+
+		'if' ^^ aa == 'true' ^^
+		<< 
+			bb = 'false'
+		>>
+
+		<<<  cc = 'false' >>>
+
+		'output' bb & aa
+	>>
+
+	'while' ^^ pl -> prog ^^ 
+	<<
+		pl = 'logicalassign' prog ^ pl
+	>>
+
+	'if' ^^ aa == 'true' ^^
+	<< 
+		bb = 'false'
+	>>
+	'else'
+	<<
+		pl = 'logicalassign' prog ^ pl
+	>>
+
+	arr << 3 >> = 'true'
+	nota = predic ^^ pl , prog ^^
+	kate = 'logicalassign' 'false' -> nota
+	
+	predic2 ^^ cc , dd ^^
+	<< 
+		note = ! cc <=> dd
+
+		'if' ^^ cc == 'false' ^^
+		<< 
+			newEl = 'input' 'true'
+			'while' ^^ cc -> newEL ^^ 
+			<<
+				pl = 'logicalassign' cc ^ pl
+			>>
+		>>
+
+		'output' cc ^ dd
+	>>
+	
+	'message' bil & arr << 2 >>
+
+	value = predic ^^ pl , bil ^^ 
+>>
